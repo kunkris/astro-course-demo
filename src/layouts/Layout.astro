@@ -7,11 +7,11 @@ interface Props {
 	image?: string;
 }
 
-const { title, description = "Supawan dental Clinic", image ="/image/band.jpg" } = Astro.props;
+const { title, description = "Rhythm Nation", image ="/image/band.jpg" } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="border border-transparent">	<!-- add border to fix inequality in growth of blog's page -->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -27,13 +27,3 @@ const { title, description = "Supawan dental Clinic", image ="/image/band.jpg" }
 		<slot />
 	</body>
 </html>
-
-<!-- <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		background-color: aquamarine;
-	}
-</style> -->
